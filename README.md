@@ -2,7 +2,7 @@
 股票交易软件辅助工具
 
 ## 简介
-用于华泰证券独立交易软件和同花顺通用版（须有`双向委托[F6]`功能）。软件可以一次监控5只股票，根据条件下单。每次下单耗时小于1s，目前软件只能知道委托是否成功。如果有疑问，或是建议，可以发邮件联系。邮箱：ronghui.ding@outlook.com，或加入QQ群：486224275。
+用于华泰证券通达信版（须有`双向委托`功能）。软件可以一次监控5只股票，根据条件下单。每次下单耗时小于1s，目前软件只能知道委托是否成功。如果有疑问，或是建议，可以发邮件联系。QQ群：486224275。
 
 ## 注意事项
 * 开发环境是win10 64bit, python3 64bit、pywin32、tushare。 以前是用python 32bit开发的，现在好像python 64bit的也能用。
@@ -20,15 +20,17 @@
 * v 0.04 重新布局了控件，重构了monitor函数。现在一次可以下4个条件单。
 * v 0.05 加入时间条件单。
 * v 0.06 交易软件接口函数单独放winguiauto文件。
-* v 0.07 时间条件单和价格条件单相结合，添加保存和载入功能,存档和主文件在同一目录下，名为stockInfo.dat，是个二进制文件。	
+* v 0.07 时间条件单和价格条件单相结合，添加保存和载入功能,存档和主文件在同一目录下，名为stockInfo.dat，是个二进制文件。
 * v 0.08 代码清理，添加了注释。现在可以同时监控5只股票。
-* v 0.09 增加配置文件pyautotrading.ini,		支持华泰专业版和同花顺通用版。可以通过修改配置文件来选择。加入自动刷新功能，每隔5分钟刷新一次，防止软件进入待机状态。
+* v 0.09 增加配置文件pyautotrading.ini。加入自动刷新功能，每隔5分钟刷新一次，防止软件进入待机状态。
 * v0.10 修改了几个bug，买卖价格改由python计算，加快了下单速度（0.6s），稳定性增加了不少。需更改交易软件设置，请看图。
 
 
 -----------------------------------
-![image](https://github.com/drongh/PyAutoTrading/raw/master/Logo/setting1.png)
-![image](https://github.com/drongh/PyAutoTrading/raw/master/Logo/setting2.png)
-![image](https://github.com/drongh/PyAutoTrading/raw/master/Logo/setting3.png)
-![image](https://github.com/drongh/PyAutoTrading/raw/master/Logo/setting4.png)
-![image](https://github.com/drongh/PyAutoTrading/raw/master/Logo/trading.png)
+![image](https://github.com/drongh/pyautotrade_tdx/raw/master/Logo/setting1.png)
+![image](https://github.com/drongh/pyautotrade_tdx/raw/master/Logo/setting2.png)
+![image](https://github.com/drongh/pyautotrade_tdx/raw/master/Logo/setting3.png)
+![image](https://github.com/drongh/pyautotrade_tdx/raw/master/Logo/setting4.png)
+![image](https://github.com/drongh/pyautotrade_tdx/raw/master/Logo/setting5.png)
+![image](https://github.com/drongh/pyautotrade_tdx/raw/master/Logo/setting6.png)
+![image](https://github.com/drongh/pyautotrade_tdx/raw/master/Logo/trading.png)
