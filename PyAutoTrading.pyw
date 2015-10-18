@@ -313,7 +313,7 @@ class StockGui:
         self.getItems()
         with open('stockInfo.dat', 'wb') as fp:
             pickle.dump(set_stock_info, fp)
-            pickle.dump(actual_stock_info, fp)
+            # pickle.dump(actual_stock_info, fp)
             pickle.dump(order_msg, fp)
 
     def load(self):
@@ -324,7 +324,7 @@ class StockGui:
         global set_stock_info, order_msg, actual_stock_info
         with open('stockInfo.dat', 'rb') as fp:
             set_stock_info = pickle.load(fp)
-            actual_stock_info = pickle.load(fp)
+            # actual_stock_info = pickle.load(fp)
             order_msg = pickle.load(fp)
         for row in range(self.rows):
             for col in range(self.cols):
