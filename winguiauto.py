@@ -210,7 +210,7 @@ def _closePopupWindow(top_hwnd, wantedText=None, wantedClass=None):
 
 def closePopupWindows(top_hwnd):
     '''
-    连续点击多个弹出式对话框，直到没有弹窗
+    连续关闭多个弹出式对话框，直到没有弹窗
     :param top_hwnd: 主窗口句柄
     :return:
     '''
